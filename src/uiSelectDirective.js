@@ -34,6 +34,9 @@ uis.directive('uiSelect',
       if (tAttrs.inputId)
         tElement.querySelectorAll('input.ui-select-search')[0].id = tAttrs.inputId;
 
+      if (tAttrs.inputName)
+        tElement.querySelectorAll('input.ui-select-search')[0].name = tAttrs.inputName;
+
       return function(scope, element, attrs, ctrls, transcludeFn) {
 
         var $select = ctrls[0];
